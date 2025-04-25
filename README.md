@@ -1,4 +1,4 @@
-Gerard Braad's Dotfils DevContainer Features
-============================================
+Gerard Braad's Dotfiles DevContainer Features
+=============================================
 
 
