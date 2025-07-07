@@ -31,7 +31,7 @@ installroot() {
     git clone https://github.com/gbraad-dotfiles/upstream.git ~/.dotfiles --depth 2 \
         && mkdir -p ~/.config \
         && cd ~/.dotfiles \
-        && . ./dotfiles.sh \
+        && source dotfiles.sh \
         && stow config \
         && dotfiles restow \
         && chsh -s /usr/bin/zsh
