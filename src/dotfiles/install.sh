@@ -29,8 +29,9 @@ installuser() {
 installroot() {
     rm -rf ~/.oh-my-zsh ~/.zshrc
     git clone https://github.com/gbraad-dotfiles/upstream.git ~/.dotfiles --depth 2 \
+        && mkdir -p ~/.config \
         && cd ~/.dotfiles \
-        && . ./zsh/.zshrc.d/dotfiles.zsh \
+        && . ./dotfiles.sh \
         && stow config \
         && dotfiles restow \
         && chsh -s /usr/bin/zsh
